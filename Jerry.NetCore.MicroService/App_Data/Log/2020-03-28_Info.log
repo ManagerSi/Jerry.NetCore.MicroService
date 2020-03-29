@@ -1,0 +1,79 @@
+2020-03-28 12:20:58,697 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 12:21:02,041 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 12:21:02,042 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 12:21:02,044 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 12:21:02,045 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 12:21:02,048 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 12:21:02,049 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 12:21:02,257 [5] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 12:21:02,258 [5] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 12:31:42,189 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 12:31:45,298 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 12:31:45,299 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 12:31:45,307 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 12:31:45,313 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 12:31:45,317 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 12:31:45,318 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 12:31:45,537 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 12:31:45,538 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 16:26:50,074 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 16:26:54,114 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 16:26:54,116 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 16:26:54,120 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 16:26:54,127 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 16:26:54,131 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 16:26:54,131 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 16:26:54,388 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 16:26:54,389 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 16:28:34,752 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 16:28:37,513 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 16:28:37,514 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 16:28:37,523 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 16:28:37,524 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 16:28:37,527 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 16:28:37,528 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 16:28:37,724 [5] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 16:28:37,725 [5] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 16:30:49,107 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 16:30:51,662 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 16:30:51,664 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 16:30:51,669 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 16:30:51,671 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 16:30:51,674 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 16:30:51,675 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 16:30:51,863 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 16:30:51,864 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 18:23:54,637 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 18:27:35,392 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 18:37:01,934 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 18:40:36,299 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 18:45:16,645 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 18:49:06,356 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 18:49:15,145 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: https://localhost:5001
+2020-03-28 18:49:15,168 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: https://localhost:5001
+2020-03-28 18:49:15,181 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: http://localhost:5000
+2020-03-28 18:49:15,187 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: http://localhost:5000
+2020-03-28 18:49:15,198 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 18:49:15,205 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 18:49:15,220 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 18:49:15,255 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 18:49:15,301 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 18:49:15,427 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 18:49:16,766 [5] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 18:49:16,775 [5] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 18:52:41,085 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.
+2020-03-28 18:53:22,739 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: https://localhost:5001
+2020-03-28 18:53:22,781 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: https://localhost:5001
+2020-03-28 18:53:22,789 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: http://localhost:5000
+2020-03-28 18:53:22,805 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Now listening on: http://localhost:5000
+2020-03-28 18:53:22,828 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 18:53:22,836 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Application started. Press Ctrl+C to shut down.
+2020-03-28 18:53:22,852 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 18:53:22,916 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Hosting environment: Development
+2020-03-28 18:53:23,146 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 18:53:23,178 [1] INFO  Microsoft.Hosting.Lifetime [(null)] - Content root path: G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService
+2020-03-28 18:53:24,660 [13] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 18:53:24,669 [13] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 18:53:25,720 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 18:53:25,734 [4] INFO  Jerry.NetCore.MicroService.Controllers.HomeController [(null)] - HomeController-Index invoked
+2020-03-28 20:52:35,163 [1] INFO  Jerry.NetCore.MicroService.Program [(null)] - Jerry.NetCore.MicroService Application - Main is invoked.

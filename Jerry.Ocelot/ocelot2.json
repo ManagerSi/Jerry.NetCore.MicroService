@@ -1,0 +1,65 @@
+{
+  // 转发路由，数组中的每个元素都是某个服务的一组路由转发规则
+  "ReRoutes": [
+    {
+      // 下游（服务提供方）服务路由模板
+      "DownstreamPathTemplate": "/{path}",
+      // Uri方案，http、https
+      "DownstreamScheme": "http",
+      // 服务地址和端口，如果是集群就设置多个
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8880
+        },
+        {
+          "Host": "localhost",
+          "Port": 8881
+        },
+        {
+          "Host": "localhost",
+          "Port": 8882
+        }
+      ],
+      // 允许的HTTP请求方法，可以写多个
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      // 上游（客户端，服务消费方）请求路由模板
+      "UpstreamPathTemplate": "/jerry/{path}",
+      // 负载均衡，只有上面匹配了集群，才有效
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin" // 轮询
+      }
+    },
+    {
+      // 下游（服务提供方）服务路由模板
+      "DownstreamPathTemplate": "/{path}",
+      // Uri方案，http、https
+      "DownstreamScheme": "http",
+      // 服务地址和端口，如果是集群就设置多个
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        },
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      // 允许的HTTP请求方法，可以写多个
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      // 上游（客户端，服务消费方）请求路由模板
+      "UpstreamPathTemplate": "/MyServiceB/{path}",
+      // 负载均衡，只有上面匹配了集群，才有效
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin" // 轮询
+      }
+    }
+  ],
+  // 全局配置，此节点的配置会覆盖ReRoutes，可以在这里设置一些通用的配置
+  "GlobalConfiguration": {
+    // 路由是否区分大小写
+    "ReRouteIsCaseSensitive": false
+
+  }
+}

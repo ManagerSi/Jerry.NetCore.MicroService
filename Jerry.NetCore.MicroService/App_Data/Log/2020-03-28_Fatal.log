@@ -1,0 +1,94 @@
+2020-03-28 18:25:16,972 [1] FATAL Microsoft.AspNetCore.Hosting.Diagnostics [(null)] - Application startup exception
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.Uri..ctor(String uriString)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.<>c__DisplayClass1_0.<UseConsul>b__0(ConsulClientConfiguration consulConfig) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 32
+   at Consul.ConsulClient..ctor(Action`1 configOverride, Action`1 clientOverride, Action`1 handlerOverride)
+   at Consul.ConsulClient..ctor(Action`1 configOverride)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.UseConsul(IApplicationBuilder app) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 32
+   at Jerry.NetCore.MicroService.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IOptions`1 serviceOptions) in G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService\Startup.cs:line 65
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-03-28 18:25:16,975 [1] FATAL Microsoft.AspNetCore.Hosting.Diagnostics [(null)] - Application startup exception
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.Uri..ctor(String uriString)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.<>c__DisplayClass1_0.<UseConsul>b__0(ConsulClientConfiguration consulConfig) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 32
+   at Consul.ConsulClient..ctor(Action`1 configOverride, Action`1 clientOverride, Action`1 handlerOverride)
+   at Consul.ConsulClient..ctor(Action`1 configOverride)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.UseConsul(IApplicationBuilder app) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 32
+   at Jerry.NetCore.MicroService.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IOptions`1 serviceOptions) in G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService\Startup.cs:line 65
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-03-28 18:41:55,907 [1] FATAL Microsoft.AspNetCore.Hosting.Diagnostics [(null)] - Application startup exception
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.UseConsul(IApplicationBuilder app) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 42
+   at Jerry.NetCore.MicroService.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IOptions`1 serviceOptions) in G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService\Startup.cs:line 67
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-03-28 18:41:55,935 [1] FATAL Microsoft.AspNetCore.Hosting.Diagnostics [(null)] - Application startup exception
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.UseConsul(IApplicationBuilder app) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 42
+   at Jerry.NetCore.MicroService.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IOptions`1 serviceOptions) in G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService\Startup.cs:line 67
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-03-28 18:46:49,504 [1] FATAL Microsoft.AspNetCore.Hosting.Diagnostics [(null)] - Application startup exception
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.UseConsul(IApplicationBuilder app) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 42
+   at Jerry.NetCore.MicroService.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IOptions`1 serviceOptions) in G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService\Startup.cs:line 67
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-03-28 18:46:49,548 [1] FATAL Microsoft.AspNetCore.Hosting.Diagnostics [(null)] - Application startup exception
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ConsulServiceRegistration.ConsulRegistrationExtensions.UseConsul(IApplicationBuilder app) in G:\GitRepository\Jerry.NetCore.MicroService\ConsulServiceRegistration\ConsulRegistrationExtensions.cs:line 42
+   at Jerry.NetCore.MicroService.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IOptions`1 serviceOptions) in G:\GitRepository\Jerry.NetCore.MicroService\Jerry.NetCore.MicroService\Startup.cs:line 67
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)

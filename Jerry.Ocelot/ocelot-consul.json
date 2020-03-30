@@ -13,7 +13,23 @@
       "LoadBalancerOptions": {
         "Type": "RoundRobin" //轮询     
       },
-      "UseServiceDiscovery": true
+      "UseServiceDiscovery": true,
+      "FileCacheOptions": { //启用缓存
+        "TtlSeconds": 15,
+        "Region": "UserCache" //可以调用api清理缓存 
+      },
+      "QoSOptions": { //polly 超时/熔断  3个异常后熔断15s
+        "ExceptionsAllowedBeforeBreaking": 3, //允许多少个异常请求
+        "DurationOfBreak": 15000, //熔断时间，ms
+        "TimeoutValue": 1000 //如果下游请求的处理时间超过 *ms,则视为超时，默认90s
+      },
+      "RateLimitOptions": { //限流--5分钟内最多访问5次，超过则显示Too many requests.. 等10s后可以重新请求
+        "ClientWhitelist": [ "jerry", "" ], //白名单,请求方法，在header中增加ClientId="jerry"
+        "EnableRateLimiting": true,
+        "Period": "5m", //1s, 5m, 1h, 1d
+        "PeriodTimespan": 10, //多少秒之后客户端可以重试
+        "Limit": 5 //统计时间段内允许最大请求量
+      } 
     }
   ],
   // 全局配置，此节点的配置会覆盖ReRoutes，可以在这里设置一些通用的配置
@@ -23,6 +39,10 @@
       "Host": "localhost",
       "Port": 8500,
       "Type": "Consul" //由Consul提供服务发现
+    },
+    "RateLimitOptions": { //全局限流设置
+      "QuotaExceededMessage": "Too many requests, maybe later?", //当前请求过多
+      "HttpStatusCode": 666 //当请求过载被截断时返回的http status
     }
   }
 }

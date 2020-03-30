@@ -84,9 +84,10 @@ namespace Jerry.NetCore.MicroService
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
+               endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+               
             });
         }
     }

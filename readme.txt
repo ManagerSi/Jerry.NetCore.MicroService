@@ -17,10 +17,15 @@
   直接运行项目Jerry.Ocelot（非iisexpress）
   浏览器中输入 http://localhost:5000/home，根据ocelot.json配置，ocelot会将请求转发到相应DownstreamPathTemplate中 
 
-3 启动nginx（监听80端口）
+4 启动nginx（监听80端口）
   Tools\nginx-1.17.9 
   打开 cmd-> start nginx.exe (确保80端口没被占用，否则报错：An attempt was made to access a socket in a way forbidden)
   调整配置文件：Tools\nginx-1.17.9\conf\nginx.conf
 	查找：Microservice，修改下面的服务地址即可
   
-  
+
+测试限流
+	 一分钟刷5次以上http://localhost:5000/home，会出现限流提示
+测试熔断
+	请求多次https://localhost:5001/myapi/throwexception（服务抛异常），熔断15s（有缓存？）
+	请求多次https://localhost:5001/myapi/timeout（服务处理需5s），熔断超时15s

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using StackExchange.Redis;
 
 namespace Jerry.NetCore.MicroService
 {
@@ -43,12 +44,22 @@ namespace Jerry.NetCore.MicroService
 
             services.AddHealthChecks();
             services.AddConsul(Path.Combine( AppDomain.CurrentDomain.BaseDirectory, "consulsettings.json"));
+
+            var redis = Configuration["RedisConnection"];
+            services.AddSession();
+            services.AddDistributedRedisCache(options =>
+            {
+                options.InstanceName = "NetMicroServiceRedis";
+                options.Configuration = "127.0.0.1:6379"; //Configuration[""];
+            });//redis 分布式缓存
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IOptions<ConsulServiceOptions> serviceOptions)
         {
             loggerFactory.AddLog4Net();
+
+            app.UseSession();
 
             if (env.IsDevelopment())
             {
@@ -69,6 +80,7 @@ namespace Jerry.NetCore.MicroService
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             //访问方式：Ip:端口/swagger/index.html

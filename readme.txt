@@ -1,8 +1,13 @@
+.netcore3.1 + consul + ocelot + nginx 
+session -> redis
+
 
 1 启动 Consul (Tools 目录下，或下载地址： https://www.consul.io/downloads.html)， 
   进入Tools\consul_1.6.1_windows_amd64 文件夹下 
   cmd -> consul agent -dev 启动，(确保8500端口没有被占用)
   此时可访问 http://localhost:8500 查看Consul Ui页面；
+
+ 启动redis实例（默认无密码）netcore的session使用
 
 2 启动api服务
   进入目录Jerry.NetCore.MicroService\bin\Debug\netcoreapp3.1 

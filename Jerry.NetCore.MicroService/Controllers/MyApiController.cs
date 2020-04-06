@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace Jerry.NetCore.MicroService.Controllers
@@ -15,10 +16,12 @@ namespace Jerry.NetCore.MicroService.Controllers
     public class MyApiController : ControllerBase
     {
         private readonly ILogger<MyApiController> _logger;
+        private readonly IConfiguration _configuration;
 
-        public MyApiController(ILogger<MyApiController> logger)
+        public MyApiController(ILogger<MyApiController> logger, IConfiguration config)
         {
             _logger = logger;
+            _configuration = config;
         }
         [HttpGet] // api/Timeout
         //[Route("MyApi", "Timeout")]
@@ -50,7 +53,19 @@ namespace Jerry.NetCore.MicroService.Controllers
         public IEnumerable<string> Get()
         {
             _logger.LogInformation("Get invoke");
-            return new string[] { "value1", "value2" };
+            #region session
+            string user = base.HttpContext.Session.GetString("CurrentUser");
+            if (user == null)
+            {// 获取当前服务地址和端口
+                string port = (Request.HttpContext.Connection.LocalIpAddress.MapToIPv4().ToString() + ":" + Request.HttpContext.Connection.LocalPort);
+                
+                base.HttpContext.Session.SetString("CurrentUser",$"Jerry {port}");
+                user = base.HttpContext.Session.GetString("CurrentUser");
+            }
+
+            #endregion
+
+            return new string[] { "value1", "value2", user };
         }
 
         /// <summary>

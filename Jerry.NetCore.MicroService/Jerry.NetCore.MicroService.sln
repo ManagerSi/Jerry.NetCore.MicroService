@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceDiscovery", "Service
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jerry.ServiceDiscovery", "..\Jerry.ServiceDiscovery\Jerry.ServiceDiscovery.csproj", "{736E545B-E8A4-4F0F-B377-49AD53B4B064}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jerry.ServiceCustomer", "..\Jerry.ServiceCustomer\Jerry.ServiceCustomer.csproj", "{D2989692-4FEA-45A8-872C-C8FDC02D1CF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jerry.ServiceCustomer", "..\Jerry.ServiceCustomer\Jerry.ServiceCustomer.csproj", "{D2989692-4FEA-45A8-872C-C8FDC02D1CF9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polly", "Polly", "{B226720D-2608-4AD7-9BB7-12939D5CBD79}"
 EndProject
@@ -23,7 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCustomerWithPolly", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{2B34E1BF-274B-4660-9EDE-1261813B5D1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jerry.Ocelot", "..\Jerry.Ocelot\Jerry.Ocelot.csproj", "{92BB4074-4A57-408E-86EC-77DD4D9E84A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jerry.Ocelot", "..\Jerry.Ocelot\Jerry.Ocelot.csproj", "{92BB4074-4A57-408E-86EC-77DD4D9E84A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jerry.AuthenticationCenter", "..\Jerry.AuthenticationCenter\Jerry.AuthenticationCenter.csproj", "{3487D939-C970-4090-840B-AF1DA6E2CCE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationCenter", "AuthenticationCenter", "{402687B9-2FD0-4B7C-BE38-DD41A8AA66F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jerry.AuthenticationCenterTest", "..\Jerry.AuthenticationCenterTest\Jerry.AuthenticationCenterTest.csproj", "{6A80DE4A-8C00-4DCF-AF6D-7C1DED42817B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +65,14 @@ Global
 		{92BB4074-4A57-408E-86EC-77DD4D9E84A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92BB4074-4A57-408E-86EC-77DD4D9E84A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92BB4074-4A57-408E-86EC-77DD4D9E84A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3487D939-C970-4090-840B-AF1DA6E2CCE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3487D939-C970-4090-840B-AF1DA6E2CCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3487D939-C970-4090-840B-AF1DA6E2CCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3487D939-C970-4090-840B-AF1DA6E2CCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A80DE4A-8C00-4DCF-AF6D-7C1DED42817B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A80DE4A-8C00-4DCF-AF6D-7C1DED42817B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A80DE4A-8C00-4DCF-AF6D-7C1DED42817B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A80DE4A-8C00-4DCF-AF6D-7C1DED42817B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +86,8 @@ Global
 		{79FEAC17-9D90-4F3D-84A5-5675D630B27E} = {B226720D-2608-4AD7-9BB7-12939D5CBD79}
 		{CDD05587-870E-4972-9EDF-4FE6F1EB3220} = {B226720D-2608-4AD7-9BB7-12939D5CBD79}
 		{92BB4074-4A57-408E-86EC-77DD4D9E84A6} = {2B34E1BF-274B-4660-9EDE-1261813B5D1E}
+		{3487D939-C970-4090-840B-AF1DA6E2CCE1} = {402687B9-2FD0-4B7C-BE38-DD41A8AA66F1}
+		{6A80DE4A-8C00-4DCF-AF6D-7C1DED42817B} = {402687B9-2FD0-4B7C-BE38-DD41A8AA66F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {142C690E-71A0-4DF7-B7BF-7989EF4D24BC}

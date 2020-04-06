@@ -1,3 +1,4 @@
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -38,6 +39,21 @@ namespace Jerry.Ocelot
                 ;
             ////启用自定义缓存CustomerCache
             //services.AddSingleton<IOcelotCache<CachedResponse>, CustomerCache>();
+
+
+            #region identifiserver 4
+
+            var authenticationProviderKey = "UserGatewayKey";
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(authenticationProviderKey, options =>
+                {
+                    options.Authority = "http://localhost:5000";
+                    options.ApiName = "user_api";
+                    options.RequireHttpsMetadata = false;
+                    options.SupportedTokens = SupportedTokens.Both;
+                });
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Jerry.NetCore.MicroService.Models;
 using Microsoft.AspNetCore.Hosting.Server.Features;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 
 namespace Jerry.NetCore.MicroService.Controllers
@@ -27,6 +28,17 @@ namespace Jerry.NetCore.MicroService.Controllers
            // 获取当前服务地址和端口
            string port = (Request.HttpContext.Connection.LocalIpAddress.MapToIPv4().ToString() + ":" + Request.HttpContext.Connection.LocalPort);
            ViewBag.ServicePort = port;
+
+           #region session
+           string user = base.HttpContext.Session.GetString("CurrentUser");
+           if (user == null)
+           {// 获取当前服务地址和端口
+           
+               base.HttpContext.Session.SetString("CurrentUser", $"Jerry {port}");
+               ViewBag.User = base.HttpContext.Session.GetString("CurrentUser");
+           }
+
+           #endregion
 
             return View();
         }
